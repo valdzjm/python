@@ -1,5 +1,4 @@
 import xlwings as xw
-import pandas as pd
 from tkinter import filedialog
 import shutil
 from datetime import datetime
@@ -7,9 +6,8 @@ import pyautogui as pg
 
 #Working With the Master Excel File
 
-fpmaster = r"C:\Users\jvaldez21\OneDrive - DXC Production\Tracker\DXC ChgM Change Review Tracker.xlsx"
-#fptest =  r"C:\Users\jvaldez21\OneDrive - DXC Production\Tracker\Testing area\Tracker Test.xlsx"
-fpnew = filedialog.askopenfilename()
+fpmaster = r"filepath" #main excel file
+fpnew = filedialog.askopenfilename() #opens a dialog box 
 
 master_wb = xw.Book(fpmaster) #Master excel file
 
